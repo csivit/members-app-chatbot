@@ -1,0 +1,42 @@
+The following is a mind-dump.
+
+POA:
+
+- [x] A simple dummy (condition based) for providing a provisional API to the backend guys.
+- [ ] A dumb regex based version.
+- [ ] Basic NLP
+    - Extract from each query 2 things
+        - selector (what event)
+        - modifier (what about the event)
+- [ ] Conversational
+    - Learn more about this.
+
+TODO:
+- [ ] Create a better, clearer POA.
+
+Questions we have thought of directly catering to:
+
+- Request for support from CSI Core
+- Event details
+    * "next event" is a selector
+    - :all:
+        * Tell me about [selector].
+        * What is [selector]?
+    - name
+        * eg. What is the name of the next event?
+    - date & time
+        * When is [selector]?
+        * What time is [selector]?
+    - venue
+        * Where is [selector]?
+    - description
+- Basic details about CSI
+    - [will specify when we get to know]
+- Details about membership
+    - [will specify when we get to know]
+- Easter Eggs (last thing)
+    Q. Tell me a joke?
+    A. No.
+
+- What will CSI be doing in the near future?
+- Is there any event this week/month?
