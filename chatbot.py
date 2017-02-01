@@ -29,7 +29,8 @@ class ChatBot(object):
     .. note::
         We might have to pass the events list as a separate parameter.
 
-    :param context: A previously serialized version of a bot. Do not pass if there is no such previous bot
+    :param context: A previously serialized version of a bot. Do not pass if
+                    there was no previous context.
     """
 
     def __init__(self, context: str = "") -> None:
@@ -52,7 +53,7 @@ class ChatBot(object):
 
     @staticmethod
     def _deserialize(dump: str) -> 'Dict[str, Any]':
-        """Returns a JSON object that represents the state of the context
-        object.
+        """
+        :rtype: An object that contains the de-serialized state.
         """
         return {}
