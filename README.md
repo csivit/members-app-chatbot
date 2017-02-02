@@ -1,6 +1,6 @@
 # ChatBot
 
-![Documentation Badge](https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat)
+[![Documentation Badge](https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat)](http://chatbot-csivit.readthedocs.io/en/latest/)
 
 A chatbot developed for CSI-VIT's member's application. Currently, under active development.
 
