@@ -38,7 +38,8 @@ _WELCOME_MESSAGE = textwrap.dedent("""
     Hello there! I'm ChatBot. You can ask me questions about
     CSI events and about your membership.
 
-    If you wish to know what kind of questions you can ask me, ask me "What do you know?"
+    If you wish to know what kind of questions you can ask me, ask me "
+    What do you know?"
 """).strip("\n")
 
 _UNKNOWN_REQUEST_RESPONSE = (
@@ -53,7 +54,6 @@ _WHAT_BOT_KNOWS = textwrap.dedent("""
         When is the next event?
         Where will the next event be?
 """).strip("\n")
-
 
 question_word_fields_mapping = {
     "which": ["venue", "datetime"],
@@ -128,7 +128,9 @@ class ChatBot(object):
                 if selector is None:
                     response = _UNKNOWN_REQUEST_RESPONSE
                 else:
-                    response, action = self._compose_message(selector, target_term)
+                    response, action = self._compose_message(
+                        selector, target_term
+                    )
         except Exception:
             # TODO: Log an error
             return _UNKNOWN_REQUEST_RESPONSE, None
